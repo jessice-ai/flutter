@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'sunGoodsList.dart';
 class sunHome extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
@@ -15,8 +15,48 @@ class sunHomeSon extends State{
   Widget build(BuildContext context) {
     // TODO: implement build
     //throw UnimplementedError();
-    return Container(
-      child: Text("Home页面"),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start, //横轴
+      mainAxisAlignment: MainAxisAlignment.center,  //纵轴
+      children: <Widget>[
+        //按钮一
+        RaisedButton(
+          child: Text("跳转到宝贝页面"),
+          onPressed: (){
+            //路由跳转到某个页面
+              Navigator.of(context).push(
+                  MaterialPageRoute(
+                    // ignore: missing_return
+                    builder: (context){
+                      return sunGoodsList();
+                    }
+                      //页面控件
+                  )
+              );
+          },
+          color: Theme.of(context).accentColor, //颜色主题
+          textTheme: ButtonTextTheme.primary, //文本主题
+        ),
+        SizedBox(height: 20.0,),
+        RaisedButton(
+          child: Text("跳转到宝贝页面"),
+          onPressed: (){
+            //路由跳转到某个页面
+            Navigator.of(context).push(
+                MaterialPageRoute(
+                  // ignore: missing_return
+                    builder: (context){
+                      return sunGoodsList();
+                    }
+                  //页面控件
+                )
+            );
+          },
+          color: Theme.of(context).accentColor, //颜色主题
+          textTheme: ButtonTextTheme.primary, //文本主题
+
+        )
+      ],
     );
   }
 
