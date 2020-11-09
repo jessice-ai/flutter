@@ -28,34 +28,34 @@ class sunHomeSon extends State{
                   MaterialPageRoute(
                     // ignore: missing_return
                     builder: (context){
-                      return sunGoodsList();
+                      return sunGoodsList(sunCount: 77,title: "ggg",);
                     }
-                      //页面控件
+                    //页面控件
                   )
               );
           },
           color: Theme.of(context).accentColor, //颜色主题
           textTheme: ButtonTextTheme.primary, //文本主题
         ),
-        SizedBox(height: 20.0,),
-        RaisedButton(
-          child: Text("跳转到宝贝页面"),
-          onPressed: (){
-            //路由跳转到某个页面
-            Navigator.of(context).push(
-                MaterialPageRoute(
-                  // ignore: missing_return
-                    builder: (context){
-                      return sunGoodsList();
-                    }
-                  //页面控件
-                )
-            );
-          },
-          color: Theme.of(context).accentColor, //颜色主题
-          textTheme: ButtonTextTheme.primary, //文本主题
-
-        )
+        // SizedBox(height: 20.0,),
+        // RaisedButton(
+        //   child: Text("跳转到宝贝页面"),
+        //   onPressed: (){
+        //     //基本路由跳转到某个页面
+        //     Navigator.of(context).push(
+        //         MaterialPageRoute(
+        //           // ignore: missing_return
+        //             builder: (context){
+        //               return sunGoodsList(sunCount: 55,titlet: "aaa",);
+        //             }
+        //           //页面控件
+        //         )
+        //     );
+        //   },
+        //   color: Theme.of(context).accentColor, //颜色主题
+        //   textTheme: ButtonTextTheme.primary, //文本主题
+        //
+        // )
       ],
     );
   }
