@@ -23,16 +23,8 @@ class sunHomeSon extends State{
         RaisedButton(
           child: Text("跳转到宝贝页面"),
           onPressed: (){
-            //路由跳转到某个页面
-              Navigator.of(context).push(
-                  MaterialPageRoute(
-                    // ignore: missing_return
-                    builder: (context){
-                      return sunGoodsList(sunCount: 77,title: "ggg",);
-                    }
-                    //页面控件
-                  )
-              );
+            //命名路由跳转到某个页面
+            Navigator.pushNamed(context, '/goods');
           },
           color: Theme.of(context).accentColor, //颜色主题
           textTheme: ButtonTextTheme.primary, //文本主题
