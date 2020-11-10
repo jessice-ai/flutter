@@ -1,17 +1,3 @@
-# flutter_app
+15、Flutter 1.22.3 Dart SDK 2.10.3 命名路由、命名路由传值 、 无状态组件传值 、有状态组件传值.txt
 
-A new Flutter application.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Flutter_Bottom_navigation_page_switching
+这个文档中的基础路由，跟传递参数
